@@ -53,10 +53,10 @@ IDENTIFIER: [a-zA-Z] [a-zA-Z0-9]* ;
 // Whitespace
 WS: [ \t\r\n]+ -> skip ;
 ```
-🧠 Project Overview
+## 🧠 Project Overview
 This grammar is used as the foundation for a genetic programming engine. Programs are generated based on this syntax and evaluated using a fitness function to solve specific computational problems.
 
-🏗️ Interpreter Design
+## 🏗️ Interpreter Design
 The interpreter represents programs as abstract syntax trees (AST). Each individual program is executed directly from its tree representation.
 
 Interpreter Features:
@@ -66,7 +66,7 @@ Interpreter Features:
 
  * Division by zero protection: Division operations are checked to avoid runtime errors.
 
-🔁 Crossover Operator
+## 🔁 Crossover Operator
 The crossover operation works as follows:
 
 1. Two random programs are selected using tournament selection.
@@ -81,7 +81,7 @@ The crossover operation works as follows:
 
 6. One of the original programs is chosen using negative tournament selection.
 
-🧬 Selection Methods
+## 🧬 Selection Methods
 1. Tournament Selection
  * A specified number of candidates ("players") are selected from the population.
 
